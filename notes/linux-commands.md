@@ -56,7 +56,6 @@ A beginner-friendly collection of Linux commands for file management, system tas
 | `uptime` | System uptime and load |
 | `whoami` | Current logged-in user |
 | `date` | Current date and time |
-| `uname -a` | System information |
 
 ---
 
@@ -68,8 +67,6 @@ A beginner-friendly collection of Linux commands for file management, system tas
 | `top` | Interactive process viewer |
 | `kill PID` | Kill process by ID |
 | `pkill processname` | Kill process by name |
-| `jobs` | List background jobs |
-| `fg %1` | Bring job 1 to foreground |
 
 ---
 
@@ -81,45 +78,6 @@ A beginner-friendly collection of Linux commands for file management, system tas
 | `find . -name "*.sh"` | Find files by name |
 | `locate filename` | Quickly locate a file (needs `updatedb`) |
 | `wc -l filename` | Count lines in a file |
-| `sort filename` | Sort lines in a file |
-| `uniq filename` | Remove duplicate lines (use with sort) |
 
 ---
 
-## 7️⃣ Networking Basics
-
-| Command | Description |
-|---------|-------------|
-| `ping google.com` | Test internet connectivity |
-| `ifconfig` or `ip a` | Show network interfaces |
-| `wget URL` | Download file from internet |
-| `curl URL` | Fetch webpage/data from URL |
-
----
-
-## 8️⃣ Bash Scripting Basics
-
-```bash
-#!/bin/bash
-# Print Hello World
-echo "Hello World"
-
-# Take input
-read var
-
-# Conditional
-if [ $var -eq 1 ]; then
-    echo "You entered 1"
-fi
-
-# For loop
-for i in 1 2 3; do
-    echo $i
-done
-
-# While loop
-count=1
-while [ $count -le 3 ]; do
-    echo $count
-    count=$((count + 1))
-done
