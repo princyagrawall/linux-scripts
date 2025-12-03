@@ -9,6 +9,9 @@ This repository contains beginner-friendly Bash scripts for Linux automation and
 ## How to Use
 
 - Run any script with:
+- 
   chmod +x bash-scripts/script-name.sh
+  
   (make it executable by allowing permissions)
- ./bash-scripts/script-name.sh
+
+  ./bash-scripts/script-name.sh
