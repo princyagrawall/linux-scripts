@@ -1,10 +1,8 @@
-#!/bin/bash
-echo "Enter a string:"
-read str
-cleaned=$(echo "$str" | tr -d ' ')
-reversed=$(echo "$cleaned" | rev)
-if [ "$cleaned" = "$reversed" ]; then
-    echo "It is a palindrome."
-else
-    echo "It is not a palindrome."
+read -p "Enter a string: " str
+rev=$(echo $str | rev)
+if [ "$str" = "$rev" ]; then 
+     echo "$str is palindrome"
+else 
+    echo "$str is not palindrome"
 fi
+
